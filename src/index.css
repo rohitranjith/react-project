@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #2a3547 !important;
+}
+
+.tabpanel-pad>div:first-child {
+  padding: 24px 0px;
+}
+
+.sidebar .active {
+  position: relative;
+}
+
+.sidebar .active::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  border-radius: 4px;
+  width: 3px;
+  transition: 0.4s;
+  background: #274472;
+  height: 85%;
+}
+
+.active svg,
+.active span {
+  color: #274472;
+  font-weight: 500;
+}
+
+
+.overflow-scroll::-webkit-scrollbar-track {
+  background-color: #cedff9;
+  border-radius: 12px;
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: #ecf2ff;
+}
+
+.overflow-scroll::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, .2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, .2) 50%,
+      rgba(255, 255, 255, .2) 75%,
+      transparent 75%,
+      transparent)
+}
